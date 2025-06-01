@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Em-En Laundry</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #4ED7F1;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1000px;
+      width: 100%;
+      flex-wrap: nowrap;
+    }
+
+    .left-img {
+      flex: 1;
+      max-width: 400px;
+    }
+
+    .left-img img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .text {
+      flex: 1;
+      max-width: 500px;
+    }
+
+    .text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .text p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+      line-height: 1.4;
+    }
+
+    .btn {
+      background-color: #6FE6FC;
+      color: #004D60;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:hover {
+      background-color: #A8F1FF;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 20px;
+      }
+
+      .left-img, .text {
+        flex: 1;
+        max-width: 50%;
+      }
+
+      .left-img img {
+        width: 100%;
+        height: auto;
+      }
+
+      .text h1 {
+        font-size: 1.6rem;
+      }
+
+      .text p {
+        font-size: 1rem;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-img">
+      <img src="asset/4.png" alt="Foto Cewek" />
+    </div>
+    <div class="text">
+      <h1>Laundry Bersih, Tanpa Ribet</h1>
+      <p>Serahkan cucianmu ke Em-En Laundry. Wangi, bersih, dan praktis setiap hari.</p>
+      <a href="#" class="btn">Pesan Sekarang</a>
+    </div>
+  </div>
+</body>
+</html>
